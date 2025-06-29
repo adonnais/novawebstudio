@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\n  \"app\": {},\n  \"appUsingSizeAdjust\": false,\n  \"pages\": {},\n  \"pagesUsingSizeAdjust\": false\n}"
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/adonais/Documentos/GitHub/novawebstudio/src/app/layout":["static/media/569ce4b8f30dc480-s.p.woff2","static/media/93f479601ee12b01-s.p.woff2","static/media/e4af272ccee01ff0-s.p.woff2","static/media/eafabf029ad39a43-s.p.woff2","static/media/0484562807a97172-s.p.woff2","static/media/b957ea75a84b6ea7-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
