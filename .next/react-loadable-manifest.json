@@ -1,0 +1,39 @@
+{
+  "app/page.tsx -> ./component/Contacto": {
+    "id": 5114,
+    "files": [
+      "static/chunks/114.c325b2d5fe0f5dc2.js"
+    ]
+  },
+  "app/page.tsx -> ./component/Footer": {
+    "id": 5788,
+    "files": [
+      "static/chunks/788.b6e33aa0f81a2f51.js"
+    ]
+  },
+  "app/page.tsx -> ./component/PorQueElegirnos": {
+    "id": 5039,
+    "files": [
+      "static/chunks/39.482659fc19b4b8d9.js"
+    ]
+  },
+  "app/page.tsx -> ./component/QuienesSomos": {
+    "id": 8090,
+    "files": [
+      "static/chunks/90.8bfa6f5a0732fd9b.js"
+    ]
+  },
+  "app/page.tsx -> ./component/Servicios": {
+    "id": 1364,
+    "files": [
+      "static/chunks/996.39fd94e122a6e6a0.js",
+      "static/chunks/364.a6a55c16cc8ddfb8.js"
+    ]
+  },
+  "app/page.tsx -> ./component/SobreNosotros": {
+    "id": 9811,
+    "files": [
+      "static/chunks/811.a5aa139fda203b57.js"
+    ]
+  }
+}

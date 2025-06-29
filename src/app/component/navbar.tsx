@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface NavbarLink {
@@ -15,6 +16,7 @@ interface NavbarProps {
 
 export default function Navbar({ name, links }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   useEffect(() => {
     const styleId = "animated-shadow-style";
@@ -42,13 +44,25 @@ export default function Navbar({ name, links }: NavbarProps) {
   return (
     <>
       <nav
-        className="fixed top-4 left-4 right-4 z-50 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-3 px-6 rounded-full 
-        flex justify-between items-center shadow-lg"
+        className="fixed top-4 left-4 right-4 z-50 bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-3 px-6 rounded-full flex justify-between items-center shadow-lg"
         style={{ animation: "pulse-shadow 3s ease-in-out infinite" }}
       >
         {/* Logo + Nombre */}
         <div className="flex items-center gap-2">
-          <Image src="/icono.png" alt="Logo" width={36} height={36} />
+          {!imageError ? (
+            <Image
+              src="/icono.png"
+              alt="Logo"
+              width={36}
+              height={36}
+              priority
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div className="w-9 h-9 bg-gray-300 rounded-full flex items-center justify-center text-sm text-gray-600">
+              🌀
+            </div>
+          )}
           <h1 className="text-lg text-blue-600 dark:text-blue-400 font-bold">{name}</h1>
         </div>
 
@@ -56,12 +70,12 @@ export default function Navbar({ name, links }: NavbarProps) {
         <ul className="hidden lg:flex gap-6">
           {links.map((link, index) => (
             <li key={index}>
-              <a
+              <Link
                 href={link.href}
                 className="font-bold text-fuchsia-500 dark:text-fuchsia-400 hover:text-blue-500 dark:hover:text-blue-300 transition-all"
               >
                 {link.nombre}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -91,13 +105,13 @@ export default function Navbar({ name, links }: NavbarProps) {
             <ul className="space-y-4">
               {links.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     className="text-lg font-medium hover:text-blue-500 dark:hover:text-blue-300 transition"
                   >
                     {link.nombre}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
