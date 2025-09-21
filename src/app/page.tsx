@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense, lazy } from "react";
-import contenido from "../../public/contenido.json";
+import contenido from "./data/contenido.json";
 
 // ✅ Componentes cargados normalmente (necesarios de inmediato)
 
@@ -27,7 +27,7 @@ export default function Home() {
         <QuienesSomos data={contenido.empresa} />
         <PorQueElegirnos />
         <Servicios servicios={contenido.servicios} />
-        <SobreNosotros data={contenido.sobreNosotros} />
+        <SobreNosotros data={contenido.empresa.sobreNosotros} />
         <Contacto data={contenido.contacto} />
         <Footer data={contenido.footer} />
       </Suspense>

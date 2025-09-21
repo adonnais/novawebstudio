@@ -1,6 +1,6 @@
 "use client";
 
-import Contenido from "../../../public/contenido.json";
+import Contenido from "../data/contenido.json";
 import Image from "next/image";
 
 type ContactoData = {

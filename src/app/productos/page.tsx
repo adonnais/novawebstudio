@@ -1,10 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
-import Contenido from "../../../public/contenido.json";
+import Contenido from "../data/contenido.json";
 
 interface Producto {
   Clasificación: string;
-  Producto: string;
+  Nombre: string;
   DescripciónFuncional: string;
   ClienteIdeal: string;
   ObjetivoPrincipal: string;
@@ -17,7 +17,7 @@ interface Producto {
 const productos: Producto[] = Contenido.productos.map((p: Record<string, string>) => ({
 
   Clasificación: p.Clasificación,
-  Producto: p.Producto,
+  Nombre: p.Nombre,
   DescripciónFuncional: p["Descripción Funcional"],
   ClienteIdeal: p["Cliente Ideal"],
   ObjetivoPrincipal: p["Objetivo Principal"],
@@ -103,7 +103,7 @@ export default function Producto() {
             className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-blue-100 dark:border-gray-700 hover:scale-105 transition-all duration-300 cursor-pointer hover:animate-pulse-shadow"
           >
             <h3 className="text-xl font-bold text-blue-700 dark:text-blue-400 mb-2 font-poppins">
-              {p.Producto}
+              {p.Nombre}
             </h3>
             <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
               <strong>Clasificación:</strong> {p.Clasificación}
@@ -131,7 +131,7 @@ export default function Producto() {
             </button>
 
             <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-4">
-              {productoSeleccionado.Producto}
+              {productoSeleccionado.Nombre}
             </h3>
             <p className="text-sm mb-1"><strong>Clasificación:</strong> {productoSeleccionado.Clasificación}</p>
             <p className="mb-2">{productoSeleccionado.DescripciónFuncional}</p>

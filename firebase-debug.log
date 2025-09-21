@@ -1,0 +1,25 @@
+[debug] [2025-07-12T02:02:51.304Z] ----------------------------------------------------------------------
+[debug] [2025-07-12T02:02:51.322Z] Command:       /home/adonais/.nvm/versions/node/v22.17.0/bin/node /home/adonais/.nvm/versions/node/v22.17.0/bin/firebase init
+[debug] [2025-07-12T02:02:51.326Z] CLI Version:   14.10.1
+[debug] [2025-07-12T02:02:51.327Z] Platform:      linux
+[debug] [2025-07-12T02:02:51.328Z] Node Version:  v22.17.0
+[debug] [2025-07-12T02:02:51.330Z] Time:          Fri Jul 11 2025 21:02:51 GMT-0500 (hora estándar de Colombia)
+[debug] [2025-07-12T02:02:51.331Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-12T02:02:53.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-12T02:02:53.480Z] > authorizing via signed-in user (adomedmar93@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/adonais/Documentos/GitHub/novawebstudio
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
